@@ -355,7 +355,8 @@
         var d = document.createElement('button');
         d.type = 'button';
         if (i === 0) { d.classList.add('is-on'); }
-        d.setAttribute('aria-label', 'Show look ' + (i + 1) + ' of ' + slides.length);
+        var label = slides[i].getAttribute('data-label');
+        d.setAttribute('aria-label', (label ? label : 'Look ' + (i + 1)) + ' (' + (i + 1) + ' of ' + slides.length + ')');
         d.addEventListener('click', function () {
           showSlide(i);
           restartSlides();
@@ -365,12 +366,25 @@
       });
     }
 
+    var heroCaption = document.getElementById('heroCaption');
+    var captionTimer = null;
+    function setCaption(label) {
+      if (!heroCaption) return;
+      if (captionTimer) { clearTimeout(captionTimer); }
+      heroCaption.classList.add('swap');
+      captionTimer = setTimeout(function () {
+        heroCaption.textContent = label || '';
+        heroCaption.classList.remove('swap');
+      }, 400);
+    }
+
     function showSlide(i) {
       slides[slideIdx].classList.remove('is-on');
       if (dots[slideIdx]) { dots[slideIdx].classList.remove('is-on'); }
       slideIdx = (i + slides.length) % slides.length;
       slides[slideIdx].classList.add('is-on');
       if (dots[slideIdx]) { dots[slideIdx].classList.add('is-on'); }
+      setCaption(slides[slideIdx].getAttribute('data-label'));
     }
 
     function restartSlides() {

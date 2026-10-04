@@ -163,7 +163,7 @@ img { max-width: 100%; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: 50% 22%;
+  background-position: 50% 35%;
   opacity: 0;
   transition: opacity 1.8s ease;
   will-change: opacity, transform;
@@ -193,6 +193,21 @@ img { max-width: 100%; }
 .hero-dots button:hover { background: rgba(255, 255, 255, .7); }
 .hero-dots button.is-on { width: 26px; background: #fff; }
 .hero-dots button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.hero-caption {
+  position: absolute;
+  bottom: 54px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .75);
+  white-space: nowrap;
+  transition: opacity .4s ease, transform .4s ease;
+}
+.hero-caption.swap { opacity: 0; transform: translate(-50%, 6px); }
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -788,7 +803,7 @@ footer { background: var(--deep); color: #fff; padding: 70px max(24px, calc((100
   .footer-main { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: span 2; }
   .section-heading { align-items: start; gap: 20px; flex-direction: column; }
-  .desktop-only { display: none; }
+  .desktop-only, .hero-caption { display: none; }
   .barber-photos { max-width: 560px; }
   .barber-photo:first-child { min-height: 360px; }
 }
