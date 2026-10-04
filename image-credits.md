@@ -48,8 +48,12 @@ photography before production launch.
 
 ## Skin, spa & bridal (Pexels)
 
+_Note: the previous bridal photo (Maasai woman, Narok) was removed at the owner's request and is no longer used anywhere on the site._
+
+- `bridal-african-bride-pexels.jpg` — Pexels #24554127, elegant African bride in a white wedding dress, smiling.
+- `bridal-makeup-studio-pexels.jpg` — Pexels #25532746, smiling bride with a makeup brush in studio.
+
 - `east-african-spa-beauty-treatment-woman--1.jpg` — Pexels, woman receiving a soothing facial mask.
-- `kenyan-bridal-makeup-woman-pexels-1.jpg` — Pexels, Maasai woman in Narok, Kenya.
 
 ---
 

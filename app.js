@@ -36,7 +36,8 @@
     groom: 'assets/barber-trendy-shop-pexels.jpg',
     kids: 'assets/barber-styling-client-pexels.jpg',
     facial: 'assets/east-african-spa-beauty-treatment-woman--1.jpg',
-    makeup: 'assets/kenyan-bridal-makeup-woman-pexels-1.jpg'
+    makeup: 'assets/bridal-makeup-studio-pexels.jpg',
+    bridal: 'assets/bridal-african-bride-pexels.jpg'
   };
 
   var SERVICES = {
@@ -77,9 +78,9 @@
       ['Makeup Lesson', '2 hr', 'KES 8,000', IMG.makeup, 'Learn your routine with our artists.']
     ],
     Bridal: [
-      ['Bridal Beauty Trial', '2 hr 30 min', 'KES 12,000', IMG.makeup, 'Sit-down trial of glam, hair and skin prep.'],
-      ['Wedding Day Glam', '3 hr', 'KES 18,000', IMG.makeup, 'The full look — makeup, hair and touch-up kit.'],
-      ['Bridal Party Glam', '4 hr', 'KES 28,000', IMG.makeup, 'Hair and makeup for your whole crew.']
+      ['Bridal Beauty Trial', '2 hr 30 min', 'KES 12,000', IMG.bridal, 'Sit-down trial of glam, hair and skin prep.'],
+      ['Wedding Day Glam', '3 hr', 'KES 18,000', IMG.bridal, 'The full look — makeup, hair and touch-up kit.'],
+      ['Bridal Party Glam', '4 hr', 'KES 28,000', IMG.bridal, 'Hair and makeup for your whole crew.']
     ]
   };
 
