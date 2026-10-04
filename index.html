@@ -1,26 +1,463 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aura Salon & Beauty Spa | Kilimani, Nairobi</title>
-<meta name="description" content="Premium hair, beauty and spa treatments in Nairobi's Kilimani. Book your Aura moment.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aura Salon &amp; Beauty Spa | Braids, Nails &amp; Barbering — Kilimani, Nairobi</title>
+<meta name="description" content="Nairobi's home for African hair — knotless braids, cornrows, locs and afros, plus manicures, pedicures and a proper men's barber chair. Kilimani, Nairobi.">
 <link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest"></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<header class="nav"><a class="brand" href="#top"><span class="brand-mark">A</span><span>AURA<small>SALON & BEAUTY SPA</small></span></a><nav class="desktop-nav"><a href="#top">Home</a><a href="#services">Services</a><a href="#treatments">Treatments</a><a href="#packages">Packages</a><a href="#gallery">Gallery</a><a href="#book">Book</a></nav><a class="btn btn-small nav-book" href="#book">Book now <i data-lucide="arrow-up-right"></i></a><button class="menu-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button></header>
-<div class="mobile-menu"><button class="close-menu" aria-label="Close menu"><i data-lucide="x"></i></button><div class="mobile-links"><a href="#top">Home</a><a href="#services">Services</a><a href="#treatments">Treatments</a><a href="#packages">Packages</a><a href="#gallery">Gallery</a><a href="#book">Book now</a></div></div>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark">A</span>
+    <span>AURA<small>SALON &middot; NAILS &middot; BARBER</small></span>
+  </a>
+  <nav class="desktop-nav">
+    <a href="#top">Home</a>
+    <a href="#styles">Styles</a>
+    <a href="#services">Services</a>
+    <a href="#nails">Nails</a>
+    <a href="#barber">Barber</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+  <a class="btn btn-small nav-book" href="#book">Book now <i data-lucide="arrow-up-right"></i></a>
+  <button class="menu-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+</header>
+
+<div class="mobile-menu">
+  <button class="close-menu" aria-label="Close menu"><i data-lucide="x"></i></button>
+  <div class="mobile-links">
+    <a href="#top">Home</a>
+    <a href="#styles">Styles</a>
+    <a href="#services">Services</a>
+    <a href="#nails">Nails</a>
+    <a href="#barber">Barber</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#book">Book now</a>
+  </div>
+</div>
+
 <main id="top">
-<section class="hero"><div class="hero-image"></div><div class="hero-overlay"></div><div class="hero-content"><p class="eyebrow light">KILIMANI · NAIROBI</p><h1>You deserve to<br><em>feel beautiful.</em></h1><p class="hero-copy">Premium hair, beauty, and spa services designed around you.</p><div class="hero-actions"><a class="btn btn-light" href="#book">Book a treatment <i data-lucide="arrow-up-right"></i></a><a class="text-link light" href="#services">Explore services <i data-lucide="arrow-down"></i></a></div></div><div class="hero-note"><span>01</span><span class="line"></span><span>BEAUTY, REFINED</span></div></section>
-<section class="intro section-pad"><div class="intro-label"><span class="number">01</span><span class="eyebrow">THE AURA EXPERIENCE</span></div><div><h2>A little more <em>you.</em></h2><p class="intro-text">A considered approach to beauty and wellbeing. From the first welcome to the final touch, every Aura visit is a moment to pause, restore and leave feeling completely yourself.</p><a class="text-link" href="#services">Discover Aura <i data-lucide="arrow-up-right"></i></a></div></section>
-<section class="services section-pad" id="services"><div class="section-heading"><div><p class="eyebrow">02 / OUR SERVICES</p><h2>Find your <em>ritual.</em></h2></div><a class="text-link desktop-only" href="#book">View all services <i data-lucide="arrow-up-right"></i></a></div><div class="tabs" role="tablist"><button class="active" data-cat="Hair">Hair</button><button data-cat="Skin">Skin</button><button data-cat="Nails">Nails</button><button data-cat="Makeup">Makeup</button><button data-cat="Massage">Massage</button><button data-cat="Bridal">Bridal</button></div><div class="service-grid" id="service-grid"></div></section>
-<section class="feature section-pad" id="treatments"><div class="feature-photo"></div><div class="feature-copy"><p class="eyebrow">03 / YOUR TIME, WELL SPENT</p><h2>Beauty that feels<br><em>like you.</em></h2><p>Our talented team brings considered technique, beautiful products and a calm energy to every appointment. Come as you are; leave a little lighter.</p><div class="stat-row"><div><strong>12+</strong><span>Years of craft</span></div><div><strong>4.9</strong><span>Client rating</span></div><div><strong>7k</strong><span>Aura visits</span></div></div><a class="btn btn-dark" href="#book">Meet the team <i data-lucide="arrow-up-right"></i></a></div></section>
-<section class="packages section-pad" id="packages"><div class="section-heading"><div><p class="eyebrow">04 / FOR YOUR MOMENT</p><h2>Bridal <em>edit.</em></h2></div><p class="heading-note">Thoughtful beauty, from<br>the first fitting to “I do”.</p></div><div class="package-grid"><article class="package featured"><span class="package-num">01</span><p class="eyebrow">THE BRIDE</p><h3>Her day, her way.</h3><p>Trial makeup, wedding-day makeup, hair styling and a calming facial ritual.</p><strong>From KES 28,000</strong><a class="text-link" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20enquire%20about%20The%20Bride%20package%20at%20Aura%20Salon.">Enquire for your date <i data-lucide="arrow-up-right"></i></a></article><article class="package"><span class="package-num">02</span><p class="eyebrow">THE BRIDAL PARTY</p><h3>Gather beautifully.</h3><p>Hair and makeup for the people who make the moment meaningful.</p><strong>From KES 48,000</strong><a class="text-link" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20enquire%20about%20The%20Bridal%20Party%20package%20at%20Aura%20Salon.">Enquire for your date <i data-lucide="arrow-up-right"></i></a></article><article class="package"><span class="package-num">03</span><p class="eyebrow">THE FULL EXPERIENCE</p><h3>Arrive. Exhale. Glow.</h3><p>A full beauty plan with skin prep, nails, hair, makeup and touch-up kit.</p><strong>From KES 75,000</strong><a class="text-link" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20enquire%20about%20The%20Full%20Experience%20at%20Aura%20Salon.">Enquire for your date <i data-lucide="arrow-up-right"></i></a></article></div></section>
-<section class="gallery section-pad" id="gallery"><div class="section-heading"><div><p class="eyebrow">05 / AURA IN THE WILD</p><h2>The <em>gallery.</em></h2></div><div class="gallery-tabs"><button class="active">All</button><button>Hair</button><button>Skin</button><button>Nails</button></div></div><div class="gallery-grid"><button class="gallery-item tall"><img src="assets/black-woman-hair-salon-treatment-pexels-1.jpg" alt="Stylist creating a beautiful hair look"><span>View image <i data-lucide="arrow-up-right"></i></span></button><button class="gallery-item"><img src="assets/east-african-spa-beauty-treatment-woman--1.jpg" alt="Relaxing facial treatment"><span>View image <i data-lucide="arrow-up-right"></i></span></button><button class="gallery-item"><img src="assets/african-woman-nail-art-salon-pexels-1.jpg" alt="Nail art treatment"><span>View image <i data-lucide="arrow-up-right"></i></span></button><button class="gallery-item wide"><img src="assets/kenyan-bridal-makeup-woman-pexels-1.jpg" alt="Kenyan bridal beauty"><span>View image <i data-lucide="arrow-up-right"></i></span></button></div></section>
-<section class="quote section-pad"><p class="eyebrow">06 / KIND WORDS</p><blockquote>“The whole experience is so intentional. I walked in tired and walked out feeling like the best version of myself.”</blockquote><div class="quote-by"><div class="avatar">W</div><div><strong>Wanjiku M.</strong><span>Signature silk press · Kilimani</span></div><div class="stars">★★★★★</div></div></section>
-<section class="booking section-pad" id="book"><div class="booking-art"><p class="eyebrow light">07 / YOUR NEXT MOMENT</p><h2>Make time<br>for <em>you.</em></h2><p>Appointments are limited each week. Secure your preferred time and let us take care of the rest.</p><a class="text-link light" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aura%20Salon.">Book via WhatsApp <i data-lucide="arrow-up-right"></i></a></div><form class="booking-form"><div class="form-top"><p class="eyebrow">BOOK AN APPOINTMENT</p><span>STEP 1 / 2</span></div><label>What would you like to book?<select><option>Select a service</option><option>Signature Silk Press</option><option>Glow Facial</option><option>Gel Manicure</option><option>Deep Tissue Massage</option></select></label><div class="form-row"><label>Preferred date<input type="date"></label><label>Preferred time<select><option>Select a time</option><option>10:00 AM</option><option>1:00 PM</option><option>4:00 PM</option></select></label></div><label>Your name<input type="text" placeholder="e.g. Wanjiku M."></label><label>Phone number<input type="tel" placeholder="+254"></label><button class="btn btn-dark" type="button" onclick="alert('Thank you — our Aura concierge will confirm your appointment shortly.')">Request appointment <i data-lucide="arrow-up-right"></i></button><small>We’ll confirm availability via WhatsApp within one business hour.</small></form></section>
-<section class="newsletter section-pad"><div><p class="eyebrow">08 / STAY IN THE KNOW</p><h2>Aura notes, in<br>your <em>inbox.</em></h2></div><form><p>Monthly beauty tips, new rituals and a little something special.</p><div class="email-field"><input type="email" placeholder="Your email address"><button aria-label="Subscribe"><i data-lucide="arrow-up-right"></i></button></div></form></section>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg-wrap" id="heroBg">
+      <div class="hero-slide is-on" data-label="Long knotless braids" style="background-image:url('assets/braids-long-portrait-pexels.jpg');background-position:50% 14%"></div>
+      <div class="hero-slide" data-label="The natural afro" style="background-image:url('assets/afro-stylish-portrait-pexels.jpg');background-position:50% 14%"></div>
+      <div class="hero-slide" data-label="Locs, loved" style="background-image:url('assets/locs-woman-greenery-pexels.jpg');background-position:50% 18%"></div>
+      <div class="hero-slide" data-label="Braided bun artistry" style="background-image:url('assets/braids-bun-hoop-earrings-pexels.jpg');background-position:50% 16%"></div>
+      <div class="hero-slide" data-label="The nail studio" style="background-image:url('assets/manicure-dark-polish-pexels.jpg');background-position:50% 42%"></div>
+      <div class="hero-slide" data-label="The gentlemen's chair" style="background-image:url('assets/barber-trendy-shop-pexels.jpg');background-position:50% 30%"></div>
+      <div class="hero-slide" data-label="Bridal beauty" style="background-image:url('assets/bridal-african-bride-pexels.jpg');background-position:50% 16%"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="heroContent">
+      <p class="eyebrow light">KILIMANI &middot; NAIROBI</p>
+      <h1>Your <em>crown,</em><br>done right.</h1>
+      <p class="hero-copy">Nairobi's home for African hair — knotless braids, cornrows, locs and afros, plus manicures, pedicures and a proper barber's chair.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#book">Book a chair <i data-lucide="arrow-up-right"></i></a>
+        <a class="text-link light" href="#styles">Explore styles <i data-lucide="arrow-down"></i></a>
+      </div>
+    </div>
+    <div class="hero-note"><span>01</span><span class="line"></span><span>AFRICAN HAIR, HONOURED</span></div>
+    <div class="hero-caption" id="heroCaption">The salon floor</div>
+    <div class="hero-dots" id="heroDots" role="tablist" aria-label="Featured looks"></div>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="intro section-pad">
+    <div class="intro-label reveal">
+      <span class="number">01</span>
+      <span class="eyebrow">THE AURA EXPERIENCE</span>
+    </div>
+    <div class="reveal reveal-late">
+      <h2>A salon that speaks <em>African hair.</em></h2>
+      <p class="intro-text">Every stylist and barber at Aura is a specialist in African hair and skin. From three-hour braid sessions with chai and good music, to a crisp fade on your lunch break — we plan every visit around your hair, your time and you.</p>
+      <a class="text-link" href="#styles">Find your style <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ============ BRAID BAR — 3D STYLE CAROUSEL ============ -->
+  <section class="braidbar section-pad" id="styles">
+    <div class="section-heading">
+      <div class="reveal">
+        <p class="eyebrow">02 / THE BRAID BAR</p>
+        <h2>Choose your <em>crown.</em></h2>
+      </div>
+      <p class="heading-note desktop-only reveal">Spin the bar — drag, tap the arrows,<br>or just let it turn.</p>
+    </div>
+    <div class="carousel-stage reveal" id="carouselStage" aria-label="Hairstyle showcase carousel">
+      <div class="carousel-ring" id="carouselRing"></div>
+    </div>
+    <div class="carousel-ui reveal">
+      <button class="carousel-btn" id="carouselPrev" aria-label="Previous style"><i data-lucide="chevron-left"></i></button>
+      <div class="carousel-caption" id="carouselCaption">
+        <span class="cc-count" id="ccCount">1 / 8</span>
+        <strong id="ccName">Knotless Braids</strong>
+        <span class="cc-meta" id="ccMeta">3 hr 30 min &middot; from KES 8,500</span>
+        <a class="btn btn-small" id="ccBook" href="#book" data-service="Knotless Braids">Book this style <i data-lucide="arrow-up-right"></i></a>
+      </div>
+      <button class="carousel-btn" id="carouselNext" aria-label="Next style"><i data-lucide="chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services section-pad" id="services">
+    <div class="section-heading">
+      <div class="reveal">
+        <p class="eyebrow">03 / OUR SERVICES</p>
+        <h2>Find your <em>ritual.</em></h2>
+      </div>
+      <a class="text-link desktop-only reveal" href="#book">Book a service <i data-lucide="arrow-up-right"></i></a>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="active" data-cat="Hair">Hair</button>
+      <button data-cat="Nails">Nails</button>
+      <button data-cat="Barber">Barber</button>
+      <button data-cat="Skin">Skin</button>
+      <button data-cat="Makeup">Makeup</button>
+      <button data-cat="Bridal">Bridal</button>
+    </div>
+    <div class="service-grid" id="service-grid"></div>
+  </section>
+
+  <!-- ============ FEATURE ============ -->
+  <section class="feature section-pad" id="treatments">
+    <div class="feature-photo reveal"></div>
+    <div class="feature-copy reveal reveal-late">
+      <p class="eyebrow">04 / YOUR TIME, WELL SPENT</p>
+      <h2>Braids, done<br><em>beautifully.</em></h2>
+      <p>Our braiders bring considered technique, quality hair and a calm energy to every session. Long protective styles are our house speciality — come with your inspiration, leave with a crown.</p>
+      <div class="stat-row">
+        <div><strong>12+</strong><span>Years of craft</span></div>
+        <div><strong>4.9</strong><span>Client rating</span></div>
+        <div><strong>7k</strong><span>Crowned clients</span></div>
+      </div>
+      <a class="btn btn-dark" href="#book">Book a session <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ============ NAIL STUDIO — 3D FLIP CARDS ============ -->
+  <section class="nails section-pad" id="nails">
+    <div class="section-heading">
+      <div class="reveal">
+        <p class="eyebrow">05 / THE NAIL STUDIO</p>
+        <h2>Hands &amp; feet,<br><em>honoured.</em></h2>
+      </div>
+      <p class="heading-note desktop-only reveal">Hover or tap a card to see<br>the menu and prices.</p>
+    </div>
+    <div class="flip-grid">
+      <article class="flip reveal" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <img src="assets/manicure-polish-bottle-pexels.jpg" alt="Beautifully manicured nails holding a nail polish bottle" loading="lazy" decoding="async">
+            <div class="flip-label"><p class="eyebrow light">FOR HANDS</p><h3>Manicures</h3></div>
+          </div>
+          <div class="flip-face flip-back">
+            <p class="eyebrow light">MANICURES</p>
+            <h3>For hands</h3>
+            <ul>
+              <li><span>Classic manicure</span><span>KES 2,200</span></li>
+              <li><span>Aura gel manicure</span><span>KES 3,200</span></li>
+              <li><span>Full set &amp; acrylics</span><span>KES 5,500</span></li>
+              <li><span>Nail art edit</span><span>KES 4,000</span></li>
+            </ul>
+            <a class="text-link light" href="#book" data-service="Aura Gel Manicure">Book a manicure <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </div>
+      </article>
+      <article class="flip reveal reveal-late" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <img src="assets/pedicure-selfcare-pexels.jpg" alt="Woman enjoying a pedicure treatment" loading="lazy" decoding="async">
+            <div class="flip-label"><p class="eyebrow light">FOR FEET</p><h3>Pedicures</h3></div>
+          </div>
+          <div class="flip-face flip-back">
+            <p class="eyebrow light">PEDICURES</p>
+            <h3>For feet</h3>
+            <ul>
+              <li><span>Classic pedicure</span><span>KES 2,400</span></li>
+              <li><span>Signature pedicure</span><span>KES 2,800</span></li>
+              <li><span>Luxury spa pedicure</span><span>KES 3,600</span></li>
+              <li><span>Callus renewal</span><span>KES 1,500</span></li>
+            </ul>
+            <a class="text-link light" href="#book" data-service="Signature Pedicure">Book a pedicure <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </div>
+      </article>
+      <article class="flip reveal reveal-late-2" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <img src="assets/african-woman-nail-art-salon-pexels-1.jpg" alt="Nail technician applying nail art in the salon" loading="lazy" decoding="async">
+            <div class="flip-label"><p class="eyebrow light">FOR PERSONALITY</p><h3>Nail Art</h3></div>
+          </div>
+          <div class="flip-face flip-back">
+            <p class="eyebrow light">NAIL ART</p>
+            <h3>For personality</h3>
+            <ul>
+              <li><span>Minimal &amp; French</span><span>KES 1,000</span></li>
+              <li><span>Colour blocking</span><span>KES 1,500</span></li>
+              <li><span>Full art set</span><span>KES 2,500</span></li>
+              <li><span>Custom design</span><span>from KES 3,000</span></li>
+            </ul>
+            <a class="text-link light" href="#book" data-service="Nail Art Edit">Book nail art <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="polish-strip reveal">
+      <img src="assets/manicure-polish-selection-pexels.jpg" alt="Wall of nail polish colours to choose from" loading="lazy" decoding="async">
+      <p><strong>200+ colours in studio</strong> — bring your inspiration, we'll match it.</p>
+    </div>
+  </section>
+
+  <!-- ============ BARBER — MEN'S GROOMING ============ -->
+  <section class="barber section-pad" id="barber">
+    <div class="barber-copy reveal">
+      <p class="eyebrow light">06 / THE GENTLEMEN'S CHAIR</p>
+      <h2>Sharp fades,<br><em>clean endings.</em></h2>
+      <p>A proper barber's chair run by barbers who understand African hair — skin fades, afro tapers, crisp line-ups and hot-towel shaves. Walk-ins welcome; appointments skip the queue.</p>
+      <ul class="barber-menu">
+        <li><span>Signature skin fade</span><span class="dots"></span><strong>KES 1,500</strong></li>
+        <li><span>Afro taper &amp; shape</span><span class="dots"></span><strong>KES 1,500</strong></li>
+        <li><span>Line-up &amp; beard sculpt</span><span class="dots"></span><strong>KES 1,000</strong></li>
+        <li><span>Hot towel shave</span><span class="dots"></span><strong>KES 1,200</strong></li>
+        <li><span>The full groom</span><span class="dots"></span><strong>KES 3,000</strong></li>
+        <li><span>Kids' cut (under 12)</span><span class="dots"></span><strong>KES 800</strong></li>
+      </ul>
+      <div class="barber-actions">
+        <a class="btn btn-light" href="#book" data-service="Signature Skin Fade">Book a chair <i data-lucide="arrow-up-right"></i></a>
+        <a class="text-link light" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20book%20a%20barber%20appointment%20at%20Aura%20Salon." target="_blank" rel="noopener">Ask on WhatsApp <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </div>
+    <div class="barber-photos">
+      <figure class="barber-photo tilt reveal"><img src="assets/barber-cut-portrait-pexels.jpg" alt="Barber giving a sharp fade haircut" loading="lazy" decoding="async"><figcaption>The fade</figcaption></figure>
+      <figure class="barber-photo tilt reveal reveal-late"><img src="assets/barber-clippers-comb-pexels.jpg" alt="Barber working with clippers and comb" loading="lazy" decoding="async"><figcaption>The craft</figcaption></figure>
+      <figure class="barber-photo tilt reveal reveal-late-2"><img src="assets/barber-beard-styling-pexels.jpg" alt="Barber styling a client's beard" loading="lazy" decoding="async"><figcaption>The finish</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ PACKAGES ============ -->
+  <section class="packages section-pad" id="packages">
+    <div class="section-heading">
+      <div class="reveal">
+        <p class="eyebrow">07 / FOR YOUR MOMENT</p>
+        <h2>Bridal <em>edit.</em></h2>
+      </div>
+      <p class="heading-note reveal">Thoughtful beauty, from<br>the first fitting to &ldquo;I do&rdquo;.</p>
+    </div>
+    <div class="package-grid">
+      <article class="package featured reveal">
+        <span class="package-num">01</span>
+        <p class="eyebrow">THE BRIDE</p>
+        <h3>Her day, her way.</h3>
+        <p>Trial makeup, wedding-day glam, a braided or loc'd updo and a calming facial ritual.</p>
+        <strong>From KES 28,000</strong>
+        <a class="text-link" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20enquire%20about%20The%20Bride%20package%20at%20Aura%20Salon." target="_blank" rel="noopener">Enquire for your date <i data-lucide="arrow-up-right"></i></a>
+      </article>
+      <article class="package reveal reveal-late">
+        <span class="package-num">02</span>
+        <p class="eyebrow">THE BRIDAL PARTY</p>
+        <h3>Gather beautifully.</h3>
+        <p>Hair and makeup for the people who make the moment meaningful.</p>
+        <strong>From KES 48,000</strong>
+        <a class="text-link" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20enquire%20about%20The%20Bridal%20Party%20package%20at%20Aura%20Salon." target="_blank" rel="noopener">Enquire for your date <i data-lucide="arrow-up-right"></i></a>
+      </article>
+      <article class="package reveal reveal-late-2">
+        <span class="package-num">03</span>
+        <p class="eyebrow">THE FULL EXPERIENCE</p>
+        <h3>Arrive. Exhale. Glow.</h3>
+        <p>A full beauty plan with skin prep, nails, hair, makeup and a touch-up kit.</p>
+        <strong>From KES 75,000</strong>
+        <a class="text-link" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20enquire%20about%20The%20Full%20Experience%20package%20at%20Aura%20Salon." target="_blank" rel="noopener">Enquire for your date <i data-lucide="arrow-up-right"></i></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="section-heading">
+      <div class="reveal">
+        <p class="eyebrow">08 / AURA IN THE WILD</p>
+        <h2>The <em>gallery.</em></h2>
+      </div>
+      <div class="gallery-tabs">
+        <button class="active" data-filter="All">All</button>
+        <button data-filter="Hair">Hair</button>
+        <button data-filter="Nails">Nails</button>
+        <button data-filter="Barber">Barber</button>
+        <button data-filter="Bridal">Bridal</button>
+        <button data-filter="Skin">Skin</button>
+      </div>
+    </div>
+    <div class="gallery-grid" id="gallery-grid">
+      <button class="gallery-item tall" data-cat="Hair"><img src="assets/braids-studio-purple-pexels.jpg" alt="Woman showcasing a braided hairstyle" loading="lazy" decoding="async"><span>Braids <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Hair"><img src="assets/locs-woman-greenery-pexels.jpg" alt="Woman with beautiful locs in nature" loading="lazy" decoding="async"><span>Locs <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Nails"><img src="assets/manicure-dark-nails-pexels.jpg" alt="Hands with dark polished nails" loading="lazy" decoding="async"><span>Nails <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item wide" data-cat="Bridal"><img src="assets/bridal-african-bride-pexels.jpg" alt="Elegant African bride in her wedding dress" loading="lazy" decoding="async"><span>Bridal <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Hair"><img src="assets/afro-jewellery-portrait-pexels.jpg" alt="Woman with a natural afro and elegant jewellery" loading="lazy" decoding="async"><span>Afro <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Barber"><img src="assets/barber-trendy-shop-pexels.jpg" alt="Barber skillfully cutting hair in a trendy barbershop" loading="lazy" decoding="async"><span>Barber <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Hair"><img src="assets/braids-profile-seashore-pexels.jpg" alt="Profile of a woman with braided hair by the sea" loading="lazy" decoding="async"><span>Braids <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Nails"><img src="assets/pedicure-selfcare-pexels.jpg" alt="Pedicure treatment in progress" loading="lazy" decoding="async"><span>Pedicure <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Barber"><img src="assets/barber-beard-styling-pexels.jpg" alt="Barber styling a beard" loading="lazy" decoding="async"><span>Beards <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Hair"><img src="assets/braids-detailed-pattern-pexels.jpg" alt="Intricate braided hairstyle detail" loading="lazy" decoding="async"><span>Cornrows <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Hair"><img src="assets/locs-elegant-portrait-pexels.jpg" alt="Woman with elegant locs" loading="lazy" decoding="async"><span>Locs <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Hair"><img src="assets/braids-long-portrait-pexels.jpg" alt="Woman with long braided hair" loading="lazy" decoding="async"><span>Long braids <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Skin"><img src="assets/east-african-spa-beauty-treatment-woman--1.jpg" alt="Relaxing facial treatment" loading="lazy" decoding="async"><span>Skin <i data-lucide="arrow-up-right"></i></span></button>
+      <button class="gallery-item" data-cat="Hair"><img src="assets/braids-colorful-sunglasses-pexels.jpg" alt="Woman with colourful braided hair" loading="lazy" decoding="async"><span>Colour <i data-lucide="arrow-up-right"></i></span></button>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="quote section-pad">
+    <p class="eyebrow reveal">09 / KIND WORDS</p>
+    <blockquote class="reveal">&ldquo;They truly understand African hair. My knotless braids lasted four months and still looked fresh — and the welcome? Like family.&rdquo;</blockquote>
+    <div class="quote-by reveal reveal-late">
+      <div class="avatar">W</div>
+      <div><strong>Wanjiku M.</strong><span>Knotless braids &middot; Kilimani</span></div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="booking section-pad" id="book">
+    <div class="booking-art reveal">
+      <p class="eyebrow light">10 / YOUR NEXT MOMENT</p>
+      <h2>Make time<br>for <em>you.</em></h2>
+      <p>Appointments are limited each week. Braiding sessions take two to four hours — bring your inspiration, we'll bring the chai.</p>
+      <a class="text-link light" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aura%20Salon." target="_blank" rel="noopener">Book via WhatsApp <i data-lucide="arrow-up-right"></i></a>
+    </div>
+    <form class="booking-form reveal reveal-late" id="bookingForm">
+      <div class="form-top">
+        <p class="eyebrow">BOOK AN APPOINTMENT</p>
+        <span>WE REPLY WITHIN THE HOUR</span>
+      </div>
+      <label>What would you like to book?
+        <select id="serviceSelect">
+          <option value="">Select a service</option>
+          <optgroup label="Hair">
+            <option>Knotless Braids</option>
+            <option>Box Braids</option>
+            <option>Cornrows &amp; Feed-Ins</option>
+            <option>Bantu Knots &amp; Updos</option>
+            <option>Coloured Knotless</option>
+            <option>Locs Starter &amp; Retwist</option>
+            <option>Silk Press &amp; Blowout</option>
+            <option>Natural Hair Ritual</option>
+          </optgroup>
+          <optgroup label="Nails">
+            <option>Aura Gel Manicure</option>
+            <option>Classic Manicure</option>
+            <option>Signature Pedicure</option>
+            <option>Luxury Spa Pedicure</option>
+            <option>Nail Art Edit</option>
+            <option>Full Set &amp; Acrylics</option>
+          </optgroup>
+          <optgroup label="Barber">
+            <option>Signature Skin Fade</option>
+            <option>Afro Taper &amp; Shape</option>
+            <option>Line-Up &amp; Beard Sculpt</option>
+            <option>Hot Towel Shave</option>
+            <option>The Full Groom</option>
+            <option>Kids' Cut</option>
+          </optgroup>
+          <optgroup label="Skin &amp; Makeup">
+            <option>Aura Glow Facial</option>
+            <option>Deep Cleanse Facial</option>
+            <option>Back Renewal</option>
+            <option>Soft Glam Makeup</option>
+            <option>Editorial Makeup</option>
+            <option>Makeup Lesson</option>
+            <option>Bridal Beauty Trial</option>
+            <option>Wedding Day Glam</option>
+            <option>Bridal Party Glam</option>
+          </optgroup>
+        </select>
+      </label>
+      <div class="form-row">
+        <label>Preferred date<input type="date" id="bookDate"></label>
+        <label>Preferred time
+          <select id="bookTime">
+            <option>Select a time</option>
+            <option>9:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+          </select>
+        </label>
+      </div>
+      <label>Your name<input type="text" id="bookName" placeholder="e.g. Wanjiku M." required></label>
+      <label>Phone number<input type="tel" id="bookPhone" placeholder="+254" required></label>
+      <button class="btn btn-dark" type="submit">Request appointment <i data-lucide="arrow-up-right"></i></button>
+      <small id="formNote">We'll confirm availability via WhatsApp within one business hour.</small>
+    </form>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter section-pad">
+    <div class="reveal">
+      <p class="eyebrow">11 / STAY IN THE KNOW</p>
+      <h2>Aura notes, in<br>your <em>inbox.</em></h2>
+    </div>
+    <form class="reveal reveal-late">
+      <p>Monthly hair-care tips, new braid styles and a little something special.</p>
+      <div class="email-field">
+        <input type="email" placeholder="Your email address" aria-label="Your email address" required>
+        <button aria-label="Subscribe"><i data-lucide="arrow-up-right"></i></button>
+      </div>
+    </form>
+  </section>
+
 </main>
-<footer><div class="footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark">A</span><span>AURA<small>SALON & BEAUTY SPA</small></span></a><div><p class="eyebrow">VISIT US</p><p>Argwings Kodhek Road<br>Kilimani, Nairobi</p><p>Mon – Sat · 9am – 7pm</p></div><div><p class="eyebrow">SAY HELLO</p><a href="tel:+254112272061">+254 112 272 061</a><br><a href="mailto:hello@aurasalon.ke">hello@aurasalon.ke</a></div><div><p class="eyebrow">FOLLOW ALONG</p><a href="#gallery">Instagram ↗</a><br><a href="https://wa.me/254112272061">WhatsApp ↗</a></div></div><div class="footer-bottom"><span>© 2024 Aura Salon & Beauty Spa</span><span>Nairobi, Kenya</span><a href="#top">Back to top ↑</a></div></footer><a class="whatsapp" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aura%20Salon." aria-label="Book a treatment or ask a question"><i data-lucide="message-circle"></i><span>Book a treatment or ask a question</span></a><script src="app.js"></script></body></html>
+
+<footer>
+  <div class="footer-main">
+    <a class="brand footer-brand" href="#top">
+      <span class="brand-mark">A</span>
+      <span>AURA<small>SALON &middot; NAILS &middot; BARBER</small></span>
+    </a>
+    <div>
+      <p class="eyebrow">VISIT US</p>
+      <p>Argwings Kodhek Road<br>Kilimani, Nairobi</p>
+      <p>Mon &ndash; Sat &middot; 9am &ndash; 7pm<br>Sun &middot; pre-booked events only</p>
+    </div>
+    <div>
+      <p class="eyebrow">SAY HELLO</p>
+      <a href="tel:+254112272061">+254 112 272 061</a><br>
+      <a href="mailto:hello@aurasalon.ke">hello@aurasalon.ke</a>
+    </div>
+    <div>
+      <p class="eyebrow">FOLLOW ALONG</p>
+      <a href="#gallery">Instagram &#8599;</a><br>
+      <a href="https://wa.me/254112272061" target="_blank" rel="noopener">WhatsApp &#8599;</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2024 Aura Salon &amp; Beauty Spa</span>
+    <span>Nairobi, Kenya</span>
+    <a href="#top">Back to top &#8593;</a>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254112272061?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aura%20Salon." target="_blank" rel="noopener" aria-label="Book a treatment or ask a question">
+  <i data-lucide="message-circle"></i>
+  <span>Book a treatment or ask a question</span>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>
