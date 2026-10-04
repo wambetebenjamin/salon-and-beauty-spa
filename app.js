@@ -178,7 +178,7 @@
     ccName.textContent = s.name;
     ccMeta.textContent = s.time + ' \u00B7 from ' + s.price;
     ccCount.textContent = (idx + 1) + ' / ' + N;
-    ccBook.dataset.service = s.name;
+    ccBook.dataset.service = s.book;
     if (!REDUCED) {
       caption.classList.remove('swap');
       void caption.offsetWidth; /* restart the swap animation */
@@ -339,6 +339,54 @@
     hero.addEventListener('pointerleave', function () {
       heroBg.style.transform = 'translate3d(0,0,0)';
       heroContent.style.transform = 'translate3d(0,0,0)';
+    });
+  }
+
+  /* ==========================================================
+     HERO SLIDESHOW — people of Aura crossfade across the hero
+     ========================================================== */
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
+  var dotsWrap = document.getElementById('heroDots');
+  if (slides.length) {
+    var slideIdx = 0, slideTimer = null, dots = [];
+
+    if (dotsWrap) {
+      slides.forEach(function (_, i) {
+        var d = document.createElement('button');
+        d.type = 'button';
+        if (i === 0) { d.classList.add('is-on'); }
+        d.setAttribute('aria-label', 'Show look ' + (i + 1) + ' of ' + slides.length);
+        d.addEventListener('click', function () {
+          showSlide(i);
+          restartSlides();
+        });
+        dotsWrap.appendChild(d);
+        dots.push(d);
+      });
+    }
+
+    function showSlide(i) {
+      slides[slideIdx].classList.remove('is-on');
+      if (dots[slideIdx]) { dots[slideIdx].classList.remove('is-on'); }
+      slideIdx = (i + slides.length) % slides.length;
+      slides[slideIdx].classList.add('is-on');
+      if (dots[slideIdx]) { dots[slideIdx].classList.add('is-on'); }
+    }
+
+    function restartSlides() {
+      if (slideTimer) { clearInterval(slideTimer); }
+      if (REDUCED) return; /* keep the first portrait static for reduced motion */
+      slideTimer = setInterval(function () { showSlide(slideIdx + 1); }, 5000);
+    }
+    restartSlides();
+
+    /* pause the rotation while the tab is hidden */
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        if (slideTimer) { clearInterval(slideTimer); slideTimer = null; }
+      } else {
+        restartSlides();
+      }
     });
   }
 

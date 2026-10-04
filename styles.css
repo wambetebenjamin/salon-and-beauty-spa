@@ -158,16 +158,45 @@ img { max-width: 100%; }
   inset: -4%;
   will-change: transform;
 }
-.hero-bg {
+/* rotating people — crossfade slideshow */
+.hero-slide {
   position: absolute;
   inset: 0;
-  background: url('assets/braids-long-portrait-pexels.jpg') center/cover;
-  animation: kenburns 20s ease-in-out infinite alternate;
+  background-size: cover;
+  background-position: 50% 22%;
+  opacity: 0;
+  transition: opacity 1.8s ease;
+  will-change: opacity, transform;
 }
+.hero-slide.is-on {
+  opacity: 1;
+  animation: heroZoom 7.5s ease-out both;
+}
+.hero-dots {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+.hero-dots button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, .38);
+  transition: width .35s ease, background .35s ease;
+}
+.hero-dots button:hover { background: rgba(255, 255, 255, .7); }
+.hero-dots button.is-on { width: 26px; background: #fff; }
+.hero-dots button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(18, 16, 22, .74), rgba(18, 16, 22, .2) 65%, rgba(18, 16, 22, .25));
+  background: linear-gradient(90deg, rgba(18, 16, 22, .72), rgba(18, 16, 22, .14) 58%, rgba(18, 16, 22, .2));
 }
 .hero-content {
   position: relative;
@@ -708,7 +737,7 @@ footer { background: var(--deep); color: #fff; padding: 70px max(24px, calc((100
 .js .reveal-late-2 { --reveal-delay: .24s; }
 
 /* ---------- Keyframes ---------- */
-@keyframes kenburns { to { transform: scale(1.06); } }
+@keyframes heroZoom { from { transform: scale(1.08); } to { transform: scale(1); } }
 @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 @keyframes captionSwap {
   from { opacity: 0; transform: translateY(8px); }
@@ -777,7 +806,7 @@ footer { background: var(--deep); color: #fff; padding: 70px max(24px, calc((100
   .tabs { gap: 20px; overflow: auto; }
   .tabs button { white-space: nowrap; }
   .feature-photo { min-height: 340px; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 220px; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 220px; grid-auto-rows: 220px; }
   .gallery-item.tall { grid-row: span 2; }
   .gallery-item.wide { grid-column: span 2; }
   .gallery-tabs { overflow: auto; width: 100%; gap: 16px; }
